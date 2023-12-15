@@ -1,0 +1,12 @@
+interface: "eth0"  # Replace with the name of your network interface
+snaplen: 65535    # Maximum packet size to capture
+promiscuous: true  # Set to true to capture in promiscuous mode
+timeout: 30s      # Timeout for packet capture
+
+syslog:
+  server: "127.0.0.1"  # Replace with the IP address or hostname of your Graylog/Rsyslog server
+  port: 514            # Replace with the port number of your Graylog/Rsyslog server
+
+httpPort: 3000  # Port for the internal HTTPS server
+certFile: "./server.crt" # Don't forget to run generate_cert.sh
+keyFile: "./server.key"

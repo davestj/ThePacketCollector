@@ -1,4 +1,3 @@
-```markdown
 # ThePacketCollector
 
 ThePacketCollector is a Go application designed to collect network traffic on a specified interface and send it to a Graylog syslog server. It also includes an internal HTTP server for monitoring and logging.
@@ -15,11 +14,12 @@ ThePacketCollector is a Go application designed to collect network traffic on a 
 
 If you don't have Go installed, you can use the Go Version Manager (gvm) to install and manage different Go versions.
 
-```bash
 # Install gvm
+```
 bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
-
+```
 # Load gvm script
+```
 source ~/.gvm/scripts/gvm
 
 # Install Go version 1.20.10
@@ -29,7 +29,7 @@ gvm use go1.20.10 --default
 
 ### 2. Clone the Repository
 
-```bash
+```
 git clone https://github.com/davestj/ThePacketCollector.git
 cd ThePacketCollector
 ```
